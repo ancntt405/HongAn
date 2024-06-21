@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Giỏ Hàng</title>
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">
+           <img src="./Anh/Hồng ân.png" alt="">
+       </a>
+       <nav class="navbar">
+           <a href="./index.html">Trang Chủ</a>
+           <a href="">Giới Thiệu</a>
+           <a href="">Thương Hiệu</a>
+           <a href="">Nước Hoa</a>
+           <a href="">Nước Hoa Chiết</a>
+           <a href="./index3.html">Kiến Thức</a>
+           <a href="./index1.html">Liên Hệ</a>
+       </nav>
+       <div class="icons">
+           <a href="./form.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+           <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+           <a href="./index2.html"><i class="fa fa-cart-shopping" aria-hidden="true"></i></a>
+           <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+       </div>
+       </header>
+       <section class="total-piece">
+         <div class="product">
+            <div class="product-item">
+                <img src="./Anh/shopping (21).webp" alt="">
+                 <h2>Nước Hoa Unisex Maison Kukdhian Baccarat 200ml</h2>
+                 <p>15.800.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="./Anh/shopping (22).webp" alt="">
+                 <h2>Nước Hoa Unisex Maison Baccarat Rouge 540 Extrait-200ml</h2>
+                 <p>20.100.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="./Anh/shopping (23).webp" alt="">
+                 <h2>Nước Hoa Unisex Roja Parfurm Haute Luxe Scent - 300ml</h2>
+                 <p>78.800.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="./Anh/shopping (24).webp" alt="">
+                 <h2>Nước Hoa Unisex Maison Francis Kurkdjian Baccarat Rouge 540ml</h2>
+                 <p>10.890.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="./Anh/shopping (25).webp" alt="">
+                 <h2>Nước Hoa Kilian Đẳng Cấp Nhất Hiện Nay(dòng cao cấp)-200ml</h2>
+                 <p>5.950.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+         </div>
+         <div class="product">
+            <div class="product-item">
+                <img src="./Anh/shopping (31).webp" alt="">
+                 <h2>Creed Aventus- Nước Hoa Cao Cấp 250ml</h2>
+                 <p>20.150.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="./Anh/shopping (29).webp" alt="">
+                 <h2>Tom Ford Oud Wood Eau de Parfurm 100ml</h2>
+                 <p>5.560.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="./Anh/shopping (28).webp" alt="">
+                 <h2>Tom Ford Noir(Nước Hoa Cao Cấp)-200ml</h2>
+                 <p>10.800.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="./Anh/shopping (27).webp" alt="">
+                 <h2>Nước Hoa Eau de Parfur-100ml</h2>
+                 <p>7.890.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="./Anh/shopping (26).webp" alt="">
+                 <h2>Creed Aventus for Her-100ml</h2>
+                 <p>8.950.000<sup>đ</sup></p>
+                 <button onclick="addProduct()">Thêm Vào Giỏ Hàng</button>
+            </div>
+         </div>
+         <div class="next-cart"><a href="./index.html">Tiếp Tục Mua Sắm</a></div>
+       </section>
+       <section class="cart">
+        <h2>Giỏ Hàng Của Bạn</h2>
+         <form action="">
+          <table>
+            <thead>
+             <tr>
+                <th>Sản Phẩm</th>
+                <th>Giá</th>
+                <th>Số Lượng</th>
+                <th>Chọn</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+                <td><img src="./Anh/shopping (31).webp" alt="">Creed Aventus- Nước Hoa Cao Cấp 250ml</td>
+                <td><p><span>20.150.000</span><sup>đ</sup></p></td>
+                <td><input type="number" value="1" min="0"></td>
+                <td style="text-align: center">Xoá</td>
+             </tr>
+            </tbody>
+          </table>
+          <div class="price-total">
+            <p style="font-weight: bolder; border: 1px solid black;">Tổng Tiền:<span>0</span><sup>đ</sup></p>
+          </div>
+         </form>
+    </section>
+    <footer>
+        <div class="content">
+        <a href="">@2024 Thực Hiện By Lê Hồng Ân</a>
+        </div>
+        <div class="content-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+      </footer>
+       <script type="text/javascript">
+        const btn = document.querySelectorAll('button')
+console.log(btn);
+
+btn.forEach(function(button, index) {
+    button.addEventListener("click", function(event) {
+      var btnCart = event.target
+      var product = btnCart.parentElement
+      var productImg = product.querySelector("img").src
+      var productName = product.querySelector("h2").innerText
+      var productPrice = product.querySelector("p").innerText
+      addCart(productImg, productName, productPrice)
+    })
+})
+
+function addCart(productImg, productName, productPrice) {
+    var addtr = document.createElement("tr")  
+    var cartContent = ' <tr><td><img src="'+productImg+'" style="cursor: pointer;" width="100" height="100" alt="">'+productName+'</td><td><p><span class="prices">'+productPrice+'</span><sup>đ</sup></p></td><td><input style="width: 30px; outline: none; text-align: center;" type="number" value="1" min="0"></td><td style="cursor: pointer; overflow: hidden;"><span class="cart-delete">Xoá</span></td></tr>'
+    addtr.innerHTML = cartContent
+    var cartTable = document.querySelector("tbody")
+    cartTable.append(addtr)    
+}
+       </script>
+</body>
+</html>

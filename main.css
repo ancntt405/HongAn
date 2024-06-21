@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .0.5s linear;
+}
+
+:root {
+    --main-color: white;
+    --black: black;
+    --bg: black;
+    --border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 5px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .10rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+body {
+    background: var(--main-color);
+}
+
+header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: var(--border);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header .logo img {
+    height: 80px;
+    width: 80px;
+}
+
+header .navbar a {
+    color: white;
+    text-decoration: wavy;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header .navbar a:hover {
+    border-bottom: 2px solid rgb(77, 246, 103);
+    padding-bottom: 5px;
+}
+
+header .icons a {
+    display: flex;
+    text-decoration: wavy;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    right: 20px;
+}
+
+header .icons a:hover {
+   display: flex;
+   color: rgb(93, 217, 248);
+}
+
+@media only screen and (max-width: 506px) {
+    header {
+        color: white;
+        text-align: center;
+    }
+    .logo {
+        display: flex;
+    }
+    .navbar {
+        display: flex;
+    }
+    .icons {
+        display: flex;
+    }
+}
+
+@media only screen and(min-width: 769px) {
+    header {
+        color: white;
+    }
+    .logo .navbar .icons {
+        display: flex;
+        float: right;
+        width: 30%;
+    }
+}
+
+
+@media only screen and(max-width: 506px) {
+  section {
+    background-color: #333;
+    color: white;
+    text-align: center;   
+  }   
+  .slider-image-run {
+    display: none;
+  }
+}
+
+@media only screen and(min-width: 297px) {
+    section {
+        background-color: #333;
+        color: #333;
+    }
+    .slider-image-run {
+        display: block;
+        float: right;
+        width: 30%;
+    }
+}
+
+.mt-5 {
+    display: flex;
+}
+
+.list-product-item {
+    display: block;
+    list-style: none;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1150px;
+    margin: 20px auto;
+}
+
+.product-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+}
+
+.product-item img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    animation: all 0.2s ease;
+}
+
+.product-item img:hover {
+    transform: translateY(-10px);
+}
+
+.product-item h2 {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.product-item p {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-item sup {
+    display: flex;
+    color: red;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: lowercase;
+}
+
+.product-item .watch {
+    display: flex;
+    background-color: rgb(92, 253, 92);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+    border: 1px solid rgb(173, 242, 173);   
+    border-radius: 5px;
+    text-decoration: wavy;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    line-height: 30px;
+    position: relative;
+    left: 12px;
+    bottom: 10px;
+}
+
+.product-item .watch:hover {
+   display: flex;
+   color: white;
+   background-color: rgb(35, 244, 35);   
+}
+
+.product-item .buy {
+    display: flex;
+    background-color: rgb(253, 118, 80);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+    border: 1px solid rgb(251, 195, 172);   
+    border-radius: 5px;
+    text-decoration: wavy;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    line-height: 30px;
+    position: relative;
+    left: 12px;
+}
+
+.product-item .buy:hover {
+    display: flex;
+    color: white;
+    background-color: rgb(249, 80, 19);
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1150px;
+    margin: 20px auto;
+}
+
+.products-items {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+}
+
+.products-items img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    animation: all 0.2s ease;
+}
+
+.products-items img:hover {
+    transform: translateY(-10px);
+}
+
+.products-items h2 {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.products-items p {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-items sup {
+    display: flex;
+    color: red;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: lowercase;
+}
+
+.products-items .watch {
+    display: flex;
+    background-color: rgb(92, 253, 92);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+    border: 1px solid rgb(173, 242, 173);   
+    border-radius: 5px;
+    text-decoration: wavy;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    line-height: 30px;
+    position: relative;
+    left: 12px;
+    bottom: 10px;
+}
+
+.products-items .watch:hover {
+   display: flex;
+   color: white;
+   background-color: rgb(35, 244, 35);   
+}
+
+.products-items .buy {
+    display: flex;
+    background-color: rgb(253, 118, 80);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+    border: 1px solid rgb(251, 195, 172);   
+    border-radius: 5px;
+    text-decoration: wavy;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    line-height: 30px;
+    position: relative;
+    left: 12px;
+}
+
+.products-items .buy:hover {
+    display: flex;
+    color: white;
+    background-color: rgb(249, 80, 19);
+}
+
+@media (min-width: 207px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media (max-width: 506px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+.products-male {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.products-item-male {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    float: left;
+    margin-left: 15px;
+}
+
+.products-item-male img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: alls 0.3s ease;
+    display: flex;
+}
+
+.products-item-male img:hover {
+     display: flex;
+     transform: translateY(-10px);
+}
+
+.products-item-male h2 {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;   
+}
+
+.products-item-male p {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;   
+}
+
+.products-item-male sup {
+    display: flex;
+    color: red;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: lowercase;
+}
+
+.products-item-male small {
+    display: flex;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: line-through;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+
+.products-item-male a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    left: 25px;
+}
+
+.page-next {
+    display: block;
+}
+
+.mt-8 {
+    list-style: none;
+}
+
+.justify-content-center {
+    position: relative;
+    left: 350px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: inline-flex;
+    list-style: none;
+}
+
+.content a {
+    text-decoration: wavy;
+    color: white;
+    display: inline-flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.content-icons i {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    left: 90%;
+    top: 5px;
+}
+
+.content-icons .fa-facebook {
+    display: inline-block;
+    color: rgb(21, 135, 248);
+}
+
+.content-icons .fa-youtube {
+    display: inline-block;
+    color: rgb(249, 36, 36);
+}
+
+.content-icons .fa-square-instagram {
+    display: inline-block;
+    color: rgb(249, 53, 249);
+}

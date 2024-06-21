@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .0.5s linear;
+}
+
+:root {
+    --main-color: white;
+    --black: black;
+    --bg: black;
+    --border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 5px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .10rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+body {
+    background: var(--main-color);
+}
+
+header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: var(--border);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header .logo img {
+    height: 80px;
+    width: 80px;
+}
+
+header .navbar a {
+    color: white;
+    text-decoration: wavy;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header .navbar a:hover {
+    border-bottom: 2px solid rgb(77, 246, 103);
+    padding-bottom: 5px;
+}
+
+header .icons a {
+    display: flex;
+    text-decoration: wavy;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    right: 20px;
+}
+
+header .icons a:hover {
+   display: flex;
+   color: rgb(93, 217, 248);
+}
+
+@media only screen and (max-width: 506px) {
+    header {
+        color: white;
+        text-align: center;
+    }
+    .logo {
+        display: flex;
+    }
+    .navbar {
+        display: flex;
+    }
+    .icons {
+        display: flex;
+    }
+}
+
+@media only screen and(min-width: 769px) {
+    header {
+        color: white;
+    }
+    .logo .navbar .icons {
+        display: flex;
+        float: right;
+        width: 30%;
+    }
+}
+
+.mt-8 {
+    display: inline-flex;
+    position: relative;
+    left: 75%;
+    top: 20px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.content {
+    display: inline-flex;
+    list-style: none;
+}
+
+.content a {
+    text-decoration: wavy;
+    color: white;
+    display: inline-flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.content-icons i {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    left: 90%;
+    top: 5px;
+}
+
+.content-icons .fa-facebook {
+    display: inline-block;
+    color: rgb(21, 135, 248);
+}
+
+.content-icons .fa-youtube {
+    display: inline-block;
+    color: rgb(249, 36, 36);
+}
+
+.content-icons .fa-square-instagram {
+    display: inline-block;
+    color: rgb(249, 53, 249);
+}
